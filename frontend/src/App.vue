@@ -32,6 +32,7 @@ export default {
 
   .main {
     height: calc(100vh - 60px);
-    margin: 30px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 </style>
