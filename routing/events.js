@@ -14,12 +14,11 @@ class Events {
     const cookies = socket.request.headers.cookie;
 
     // При socket коннекте декодируем и пишем в сокет объект авторизации, взятый из cookie. Cookie устанавливаются при авторизации VK
+    socket.user = AnonymousUser;
     if (cookies) {
       const parsedCookies = utils.parseCookies(cookies);
       if (parsedCookies.user)
         socket.user = cookieParser.JSONCookie(cookieParser.signedCookie(parsedCookies.user, this.vkConfig.clientSecret));
-      else
-        socket.user = AnonymousUser;
     }
 
     console.log('User connected', socket.user);
