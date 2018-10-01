@@ -2,7 +2,7 @@
   "vk": {
     "clientID": "6707112",
     "clientSecret": "ZV4OsAX5IuM4NyiovJqW",
-    "redirectURL": "http://localhost:8040/vkauth",
+    "redirectURL": "https://intersol-test.herokuapp.com/vkauth",
     "accessToken": "c7604b34c7604b34c7604b341cc7061c9ccc760c7604b349cd0c16eb3387d8a1d2af305"
   },
   "db": {
